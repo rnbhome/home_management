@@ -1,0 +1,412 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "room": "Kitchen",
+      "task": "Put bin outside",
+      "due_date": "2026-04-23",
+      "done": false,
+      "freq": "1w",
+      "note": ""
+    },
+    {
+      "id": 2,
+      "room": "Kitchen",
+      "task": "Cook food",
+      "due_date": "2026-04-21",
+      "done": false,
+      "freq": "1w",
+      "note": ""
+    },
+    {
+      "id": 3,
+      "room": "Kitchen",
+      "task": "Clean oven",
+      "due_date": "2026-07-05",
+      "done": false,
+      "freq": "3m",
+      "note": ""
+    },
+    {
+      "id": 4,
+      "room": "Kitchen",
+      "task": "Powder & clean shakers",
+      "due_date": "2026-04-21",
+      "done": false,
+      "freq": "1w",
+      "note": ""
+    },
+    {
+      "id": 5,
+      "room": "Kitchen",
+      "task": "Clean sink counter",
+      "due_date": "2026-04-21",
+      "done": false,
+      "freq": "any",
+      "note": ""
+    },
+    {
+      "id": 6,
+      "room": "Kitchen",
+      "task": "Clean microwave & toaster",
+      "due_date": "2026-05-06",
+      "done": false,
+      "freq": "1m",
+      "note": ""
+    },
+    {
+      "id": 7,
+      "room": "Kitchen",
+      "task": "Sweep and mop floor",
+      "due_date": "2026-05-13",
+      "done": false,
+      "freq": "1m",
+      "note": ""
+    },
+    {
+      "id": 8,
+      "room": "Kitchen",
+      "task": "Clean trash can",
+      "due_date": "2026-05-26",
+      "done": false,
+      "freq": "1m",
+      "note": ""
+    },
+    {
+      "id": 9,
+      "room": "Kitchen",
+      "task": "Clean fridge, freezer & cupboards",
+      "due_date": "2026-10-12",
+      "done": false,
+      "freq": "6m",
+      "note": ""
+    },
+    {
+      "id": 38,
+      "room": "Kitchen",
+      "task": "Check beer & Coke Zero in fridge",
+      "due_date": "2026-04-21",
+      "done": false,
+      "freq": "2w",
+      "note": ""
+    },
+    {
+      "id": 10,
+      "room": "Laundry",
+      "task": "Fold clothes from rack",
+      "due_date": "2026-04-21",
+      "done": false,
+      "freq": "any",
+      "note": ""
+    },
+    {
+      "id": 36,
+      "room": "Laundry",
+      "task": "Dry clothes in washing machine",
+      "due_date": "2026-04-21",
+      "done": false,
+      "freq": "any",
+      "note": ""
+    },
+    {
+      "id": 34,
+      "room": "Laundry",
+      "task": "Fill another load of laundry",
+      "due_date": "2026-04-21",
+      "done": false,
+      "freq": "1w",
+      "note": ""
+    },
+    {
+      "id": 11,
+      "room": "Laundry",
+      "task": "Wash and fluff towels",
+      "due_date": "2026-04-23",
+      "done": false,
+      "freq": "2m",
+      "note": ""
+    },
+    {
+      "id": 12,
+      "room": "Laundry",
+      "task": "Iron",
+      "due_date": "2026-04-23",
+      "done": false,
+      "freq": "1w",
+      "note": ""
+    },
+    {
+      "id": 13,
+      "room": "Laundry",
+      "task": "Clean washing machine",
+      "due_date": "2026-07-14",
+      "done": false,
+      "freq": "3m",
+      "note": ""
+    },
+    {
+      "id": 14,
+      "room": "Living Room",
+      "task": "Clean windows",
+      "due_date": "2026-04-28",
+      "done": false,
+      "freq": "1m",
+      "note": ""
+    },
+    {
+      "id": 15,
+      "room": "Living Room",
+      "task": "Clean robo vacuum",
+      "due_date": "2026-04-23",
+      "done": false,
+      "freq": "1m",
+      "note": ""
+    },
+    {
+      "id": 16,
+      "room": "Living Room",
+      "task": "Dust (thorough)",
+      "due_date": "2026-05-08",
+      "done": false,
+      "freq": "1m",
+      "note": ""
+    },
+    {
+      "id": 17,
+      "room": "Bedroom",
+      "task": "Dust (thorough)",
+      "due_date": "2026-04-28",
+      "done": false,
+      "freq": "1m",
+      "note": ""
+    },
+    {
+      "id": 35,
+      "room": "Bedroom",
+      "task": "Tidy bed",
+      "due_date": "2026-04-21",
+      "done": false,
+      "freq": "1w",
+      "note": ""
+    },
+    {
+      "id": 18,
+      "room": "Bedroom",
+      "task": "Add water to humidifier",
+      "due_date": "2026-04-21",
+      "done": false,
+      "freq": "1w",
+      "note": ""
+    },
+    {
+      "id": 20,
+      "room": "Bedroom",
+      "task": "Add water to bottles",
+      "due_date": "2026-04-22",
+      "done": false,
+      "freq": "1w",
+      "note": ""
+    },
+    {
+      "id": 21,
+      "room": "Bedroom",
+      "task": "Change bed linen",
+      "due_date": "2026-04-23",
+      "done": false,
+      "freq": "2w",
+      "note": ""
+    },
+    {
+      "id": 22,
+      "room": "Bedroom",
+      "task": "Robo vacuum upstairs",
+      "due_date": "2026-04-24",
+      "done": false,
+      "freq": "1w",
+      "note": "Make sure 1st floor is clear and all doors are open. Put vacuum back down before leaving."
+    },
+    {
+      "id": 23,
+      "room": "Stairs",
+      "task": "Vacuum stairs and edge",
+      "due_date": "2026-04-22",
+      "done": false,
+      "freq": "1w",
+      "note": "Use stick vacuum."
+    },
+    {
+      "id": 24,
+      "room": "Bathroom",
+      "task": "Clean sink",
+      "due_date": "2026-04-21",
+      "done": false,
+      "freq": "any",
+      "note": ""
+    },
+    {
+      "id": 19,
+      "room": "Bathroom",
+      "task": "Collect all garbage",
+      "due_date": "2026-04-22",
+      "done": false,
+      "freq": "1w",
+      "note": ""
+    },
+    {
+      "id": 26,
+      "room": "Bathroom",
+      "task": "Regenerate softener",
+      "due_date": "2026-04-28",
+      "done": false,
+      "freq": "2w",
+      "note": ""
+    },
+    {
+      "id": 27,
+      "room": "Bathroom",
+      "task": "Clean toilet",
+      "due_date": "2026-04-23",
+      "done": false,
+      "freq": "1w",
+      "note": ""
+    },
+    {
+      "id": 28,
+      "room": "Bathroom",
+      "task": "Mop floor",
+      "due_date": "2026-05-06",
+      "done": false,
+      "freq": "1m",
+      "note": ""
+    },
+    {
+      "id": 29,
+      "room": "Bathroom",
+      "task": "Wash bath mat",
+      "due_date": "2026-07-01",
+      "done": false,
+      "freq": "3m",
+      "note": ""
+    },
+    {
+      "id": 30,
+      "room": "Bathroom",
+      "task": "Clean bathtub",
+      "due_date": "2026-05-27",
+      "done": false,
+      "freq": "1m",
+      "note": ""
+    },
+    {
+      "id": 37,
+      "room": "Bathroom",
+      "task": "Check toilet paper stock",
+      "due_date": "2026-04-21",
+      "done": false,
+      "freq": "2w",
+      "note": ""
+    },
+    {
+      "id": 31,
+      "room": "Garden",
+      "task": "Mow lawn",
+      "due_date": "2026-05-03",
+      "done": false,
+      "freq": "2w",
+      "note": ""
+    },
+    {
+      "id": 32,
+      "room": "Garden",
+      "task": "Put outside tap",
+      "due_date": "2026-11-07",
+      "done": false,
+      "freq": "1y",
+      "note": ""
+    },
+    {
+      "id": 33,
+      "room": "Car",
+      "task": "Wash outside",
+      "due_date": "2026-06-13",
+      "done": false,
+      "freq": "1m",
+      "note": ""
+    }
+  ],
+  "bins": [
+    {
+      "date": "2026-04-24",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-05-01",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-05-08",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-05-22",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-06-12",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-06-19",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    }
+  ],
+  "version": 1
+}
