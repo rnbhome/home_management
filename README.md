@@ -35,7 +35,7 @@ Every change is a GitHub commit, so your edit history is your audit log.
 1. Go to this repo → **Settings → Pages**
 2. Source: **GitHub Actions**
 3. Push any commit to `main`; the `Deploy` workflow will publish the site to
-   `https://rnbatra.github.io/home_management/`.
+   `https://rnbhome.github.io/home_management/`.
 
 ### 3. First launch
 

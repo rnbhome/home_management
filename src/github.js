@@ -1,7 +1,7 @@
 // Tiny wrapper around the GitHub Contents API.
 // `data/state.json` in this repo is the database — we GET it on load, PUT it on save.
 
-const OWNER = 'rnbatra';
+const OWNER = 'rnbhome';
 const REPO = 'home_management';
 const FILE_PATH = 'data/state.json';
 const BRANCH = 'main';
