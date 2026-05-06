@@ -56,6 +56,16 @@ function formatDayMonth(iso) {
 }
 
 // ---------- task helpers ----------
+function renderTaskName(text) {
+  const parts = text.split(/(\*[^*\n]+\*)/g);
+  return parts.map((part, i) => {
+    if (part.length > 2 && part.startsWith('*') && part.endsWith('*')) {
+      return <em key={i}>{part.slice(1, -1)}</em>;
+    }
+    return part;
+  });
+}
+
 function bucketOf(task, refISO) {
   if (task.freq === 'any') return 'urgent';
   const d = daysBetween(refISO, task.due_date);
@@ -365,7 +375,7 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
         <span className="box" />
       </label>
       <div className="task-main">
-        <div className="task-name">{task.task}</div>
+        <div className="task-name">{renderTaskName(task.task)}</div>
         {task.note && <div className="task-note">{task.note}</div>}
         <div className="task-sub">every {FREQ_LABELS[task.freq]}</div>
         {arrows.length > 0 && (
@@ -416,7 +426,7 @@ function FrequenciesTab({ state, setState }) {
           <ul className="freq-list">
             {byRoom[room].map((t) => (
               <li key={t.id} className="freq-row">
-                <div className="freq-task">{t.task}</div>
+                <div className="freq-task">{renderTaskName(t.task)}</div>
                 <div className="chip-row">
                   {FREQ_ORDER.map((f) => (
                     <button

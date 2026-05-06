@@ -4,7 +4,7 @@
       "id": 1,
       "room": "Kitchen",
       "task": "Put bin outside",
-      "due_date": "2026-04-23",
+      "due_date": "2026-04-28",
       "done": false,
       "freq": "1w",
       "note": ""
@@ -13,10 +13,10 @@
       "id": 2,
       "room": "Kitchen",
       "task": "Cook food",
-      "due_date": "2026-04-21",
+      "due_date": "2026-04-28",
       "done": false,
       "freq": "1w",
-      "note": ""
+      "note": "2 white plates. Leave outside, not in fridge."
     },
     {
       "id": 3,
@@ -31,16 +31,16 @@
       "id": 4,
       "room": "Kitchen",
       "task": "Powder & clean shakers",
-      "due_date": "2026-04-21",
+      "due_date": "2026-04-27",
       "done": false,
-      "freq": "1w",
+      "freq": "any",
       "note": ""
     },
     {
       "id": 5,
       "room": "Kitchen",
       "task": "Clean sink counter",
-      "due_date": "2026-04-21",
+      "due_date": "2026-04-27",
       "done": false,
       "freq": "any",
       "note": ""
@@ -85,7 +85,25 @@
       "id": 38,
       "room": "Kitchen",
       "task": "Check beer & Coke Zero in fridge",
-      "due_date": "2026-04-21",
+      "due_date": "2026-05-05",
+      "done": false,
+      "freq": "1w",
+      "note": ""
+    },
+    {
+      "id": 40,
+      "room": "Kitchen",
+      "task": "Empty dishwasher",
+      "due_date": "2026-04-27",
+      "done": false,
+      "freq": "1w",
+      "note": ""
+    },
+    {
+      "id": 41,
+      "room": "Kitchen",
+      "task": "Clean dishwasher filter. Add salt. Add glass rinse.",
+      "due_date": "2026-04-27",
       "done": false,
       "freq": "2w",
       "note": ""
@@ -94,7 +112,7 @@
       "id": 10,
       "room": "Laundry",
       "task": "Fold clothes from rack",
-      "due_date": "2026-04-21",
+      "due_date": "2026-04-27",
       "done": false,
       "freq": "any",
       "note": ""
@@ -103,7 +121,7 @@
       "id": 36,
       "room": "Laundry",
       "task": "Dry clothes in washing machine",
-      "due_date": "2026-04-21",
+      "due_date": "2026-05-04",
       "done": false,
       "freq": "any",
       "note": ""
@@ -112,7 +130,7 @@
       "id": 34,
       "room": "Laundry",
       "task": "Fill another load of laundry",
-      "due_date": "2026-04-21",
+      "due_date": "2026-05-04",
       "done": false,
       "freq": "1w",
       "note": ""
@@ -121,7 +139,7 @@
       "id": 11,
       "room": "Laundry",
       "task": "Wash and fluff towels",
-      "due_date": "2026-04-23",
+      "due_date": "2026-06-26",
       "done": false,
       "freq": "2m",
       "note": ""
@@ -130,7 +148,7 @@
       "id": 12,
       "room": "Laundry",
       "task": "Iron",
-      "due_date": "2026-04-23",
+      "due_date": "2026-04-28",
       "done": false,
       "freq": "1w",
       "note": ""
@@ -148,7 +166,7 @@
       "id": 14,
       "room": "Living Room",
       "task": "Clean windows",
-      "due_date": "2026-04-28",
+      "due_date": "2026-05-27",
       "done": false,
       "freq": "1m",
       "note": ""
@@ -157,7 +175,7 @@
       "id": 15,
       "room": "Living Room",
       "task": "Clean robo vacuum",
-      "due_date": "2026-04-23",
+      "due_date": "2026-05-21",
       "done": false,
       "freq": "1m",
       "note": ""
@@ -175,7 +193,7 @@
       "id": 17,
       "room": "Bedroom",
       "task": "Dust (thorough)",
-      "due_date": "2026-04-28",
+      "due_date": "2026-05-27",
       "done": false,
       "freq": "1m",
       "note": ""
@@ -184,16 +202,16 @@
       "id": 35,
       "room": "Bedroom",
       "task": "Tidy bed",
-      "due_date": "2026-04-21",
+      "due_date": "2026-04-28",
       "done": false,
       "freq": "1w",
-      "note": ""
+      "note": "Don't move the projector."
     },
     {
       "id": 18,
       "room": "Bedroom",
       "task": "Add water to humidifier",
-      "due_date": "2026-04-21",
+      "due_date": "2026-05-04",
       "done": false,
       "freq": "1w",
       "note": ""
@@ -202,16 +220,16 @@
       "id": 20,
       "room": "Bedroom",
       "task": "Add water to bottles",
-      "due_date": "2026-04-22",
+      "due_date": "2026-04-29",
       "done": false,
-      "freq": "1w",
+      "freq": "any",
       "note": ""
     },
     {
       "id": 21,
       "room": "Bedroom",
       "task": "Change bed linen",
-      "due_date": "2026-04-23",
+      "due_date": "2026-05-05",
       "done": false,
       "freq": "2w",
       "note": ""
@@ -220,7 +238,7 @@
       "id": 22,
       "room": "Bedroom",
       "task": "Robo vacuum upstairs",
-      "due_date": "2026-04-24",
+      "due_date": "2026-04-28",
       "done": false,
       "freq": "1w",
       "note": "Make sure 1st floor is clear and all doors are open. Put vacuum back down before leaving."
@@ -238,7 +256,7 @@
       "id": 24,
       "room": "Bathroom",
       "task": "Clean sink",
-      "due_date": "2026-04-21",
+      "due_date": "2026-04-27",
       "done": false,
       "freq": "any",
       "note": ""
@@ -247,25 +265,25 @@
       "id": 19,
       "room": "Bathroom",
       "task": "Collect all garbage",
-      "due_date": "2026-04-22",
+      "due_date": "2026-04-27",
       "done": false,
-      "freq": "1w",
+      "freq": "any",
       "note": ""
     },
     {
       "id": 26,
       "room": "Bathroom",
       "task": "Regenerate softener",
-      "due_date": "2026-04-28",
+      "due_date": "2026-05-04",
       "done": false,
-      "freq": "2w",
+      "freq": "1w",
       "note": ""
     },
     {
       "id": 27,
       "room": "Bathroom",
       "task": "Clean toilet",
-      "due_date": "2026-04-23",
+      "due_date": "2026-05-04",
       "done": false,
       "freq": "1w",
       "note": ""
@@ -300,10 +318,19 @@
     {
       "id": 37,
       "room": "Bathroom",
-      "task": "Check toilet paper stock",
-      "due_date": "2026-04-21",
+      "task": "Add toilet paper if less than 6 in toilet",
+      "due_date": "2026-05-11",
       "done": false,
-      "freq": "2w",
+      "freq": "1w",
+      "note": ""
+    },
+    {
+      "id": 39,
+      "room": "Bathroom",
+      "task": "Add *shower* water in sink containers",
+      "due_date": "2026-04-27",
+      "done": false,
+      "freq": "1w",
       "note": ""
     },
     {
@@ -335,13 +362,6 @@
     }
   ],
   "bins": [
-    {
-      "date": "2026-04-24",
-      "bins": [
-        "Blue bin",
-        "Green bin"
-      ]
-    },
     {
       "date": "2026-05-01",
       "bins": [
@@ -408,5 +428,5 @@
       ]
     }
   ],
-  "version": 1
+  "version": 2
 }
