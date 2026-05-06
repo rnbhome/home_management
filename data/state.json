@@ -94,10 +94,11 @@
       "id": 40,
       "room": "Kitchen",
       "task": "Empty dishwasher",
-      "due_date": "2026-04-27",
-      "done": false,
+      "due_date": "2026-05-07",
+      "done": true,
       "freq": "1w",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-04-30"
     },
     {
       "id": 41,
