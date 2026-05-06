@@ -97,12 +97,34 @@ function sortTasksForRoom(list, refISO) {
 }
 
 // ---------- day-shift parsing for Task List ----------
-function parseDayShift(text) {
+const WEEKDAYS = [
+  'sunday',
+  'monday',
+  'tuesday',
+  'wednesday',
+  'thursday',
+  'friday',
+  'saturday'
+];
+
+function parseDayShift(text, refISO) {
   const t = text.toLowerCase();
   // Order matters: check longer phrases first.
-  if (t.includes('day after tomorrow') || t.includes('in 2 days')) return 2;
-  if (t.includes('in 3 days')) return 3;
+  if (t.includes('day after tomorrow') || t.includes('day after')) return 2;
   if (t.includes('tomorrow')) return 1;
+  const inN = t.match(/in (\d+)\s*days?/);
+  if (inN) {
+    const n = parseInt(inN[1], 10);
+    if (n > 0 && n <= 30) return n;
+  }
+  for (let i = 0; i < WEEKDAYS.length; i++) {
+    if (new RegExp(`\\b${WEEKDAYS[i]}\\b`).test(t)) {
+      const todayWd = new Date(refISO + 'T00:00:00').getDay();
+      let diff = i - todayWd;
+      if (diff <= 0) diff += 7;
+      return diff;
+    }
+  }
   return 0;
 }
 
@@ -266,14 +288,13 @@ function TasksTab({ state, setState, refISO }) {
   const toggleRoom = (room) =>
     setCollapsed((c) => ({ ...c, [room]: !c[room] }));
 
-  const tick = (task) => {
-    const today = refISO;
+  const tick = (task, onDate = refISO) => {
     const updates = task.done
       ? { done: false }
       : {
           done: true,
-          last_completed: today,
-          due_date: task.freq === 'any' ? today : addDays(today, FREQ_DAYS[task.freq])
+          last_completed: onDate,
+          due_date: task.freq === 'any' ? onDate : addDays(onDate, FREQ_DAYS[task.freq])
         };
     setState((s) => ({
       ...s,
@@ -333,7 +354,7 @@ function TasksTab({ state, setState, refISO }) {
                     key={t.id}
                     task={t}
                     refISO={refISO}
-                    onTick={() => tick(t)}
+                    onTick={(date) => tick(t, date)}
                     onShift={(d) => shift(t, d)}
                     subtab={subtab}
                   />
@@ -354,6 +375,7 @@ function TasksTab({ state, setState, refISO }) {
 function TaskRow({ task, refISO, onTick, onShift, subtab }) {
   const badge = dueBadge(task, refISO);
   const b = bucketOf(task, refISO);
+  const [pickDate, setPickDate] = useState(null);
 
   // Bucket-shift arrows — only when not done and only in bucket-specific subtabs.
   const arrows = [];
@@ -368,23 +390,57 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
     }
   }
 
+  const showActionRow = !task.done || arrows.length > 0;
+
   return (
     <li className={task.done ? 'task done' : 'task'}>
       <label className="check">
-        <input type="checkbox" checked={!!task.done} onChange={onTick} />
+        <input
+          type="checkbox"
+          checked={!!task.done}
+          onChange={() => onTick()}
+        />
         <span className="box" />
       </label>
       <div className="task-main">
         <div className="task-name">{renderTaskName(task.task)}</div>
         {task.note && <div className="task-note">{task.note}</div>}
         <div className="task-sub">every {FREQ_LABELS[task.freq]}</div>
-        {arrows.length > 0 && (
+        {showActionRow && (
           <div className="shift-row">
             {arrows.map((a) => (
               <button key={a.label} className="shift" onClick={() => onShift(a.days)}>
                 {a.label}
               </button>
             ))}
+            {!task.done && (
+              <button
+                className="shift"
+                onClick={() => setPickDate(pickDate === null ? refISO : null)}
+              >
+                {pickDate === null ? 'Tick on…' : 'Cancel'}
+              </button>
+            )}
+          </div>
+        )}
+        {pickDate !== null && (
+          <div className="shift-row">
+            <input
+              type="date"
+              className="input input-inline"
+              value={pickDate}
+              max={refISO}
+              onChange={(e) => setPickDate(e.target.value)}
+            />
+            <button
+              className="shift"
+              onClick={() => {
+                onTick(pickDate);
+                setPickDate(null);
+              }}
+            >
+              Tick on {pickDate}
+            </button>
           </div>
         )}
       </div>
@@ -454,7 +510,7 @@ function TaskListTab({ state, refISO }) {
   const [copied, setCopied] = useState(false);
 
   const generate = () => {
-    const shift = parseDayShift(notes);
+    const shift = parseDayShift(notes, refISO);
     const target = shift === 0 ? refISO : addDays(refISO, shift);
     setOutput(generateTaskListText(state, target, shift));
     setCopied(false);
@@ -475,8 +531,8 @@ function TaskListTab({ state, refISO }) {
       <section className="card">
         <h2 className="card-title">🏠 Task List</h2>
         <p className="muted">
-          Day-shift hints: type <em>tomorrow</em>, <em>day after tomorrow</em>,{' '}
-          <em>in 2 days</em>, or <em>in 3 days</em>.
+          Day-shift hints: type <em>tomorrow</em>, <em>day after</em>,{' '}
+          <em>in N days</em>, or a weekday like <em>on tuesday</em> (next one).
         </p>
         <textarea
           className="notes"
@@ -761,7 +817,10 @@ export default function App() {
       <header className="hdr">
         <div className="hdr-row">
           <h1>Home Manager</h1>
-          <SaveStatus status={saveStatus} />
+          <div className="hdr-meta">
+            <span className="hdr-date">{formatDayMonth(refISO)}</span>
+            <SaveStatus status={saveStatus} />
+          </div>
         </div>
         <nav className="tabs">
           {tabs.map(([k, l]) => (
