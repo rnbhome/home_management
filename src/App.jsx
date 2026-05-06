@@ -398,7 +398,7 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
   const badge = dueBadge(task, refISO);
   const b = bucketOf(task, refISO);
   const done = isDone(task, refISO);
-  const [pickMode, setPickMode] = useState(null); // null | 'options' | 'calendar'
+  const [showCalendar, setShowCalendar] = useState(false);
   const [pickDate, setPickDate] = useState(refISO);
 
   // Bucket-shift arrows — only when not done and only in bucket-specific subtabs.
@@ -414,8 +414,6 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
     }
   }
 
-  const showActionRow = !done || arrows.length > 0;
-
   return (
     <li className={done ? 'task done' : 'task'}>
       <label className="check">
@@ -430,53 +428,35 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
         <div className="task-name">{renderTaskName(task.task)}</div>
         {task.note && <div className="task-note">{task.note}</div>}
         <div className="task-sub">every {FREQ_LABELS[task.freq]}</div>
-        {showActionRow && (
+        {arrows.length > 0 && (
           <div className="shift-row">
             {arrows.map((a) => (
               <button key={a.label} className="shift" onClick={() => onShift(a.days)}>
                 {a.label}
               </button>
             ))}
-            {!done && (
-              <button
-                className="shift"
-                onClick={() => {
-                  if (pickMode === null) {
-                    setPickMode('options');
-                    setPickDate(refISO);
-                  } else {
-                    setPickMode(null);
-                  }
-                }}
-              >
-                {pickMode === null ? 'Tick on…' : 'Cancel'}
-              </button>
-            )}
           </div>
         )}
-        {pickMode === 'options' && (
+        {!done && (
           <div className="shift-row">
             {[1, 2, 3, 4, 5, 6, 7].map((n) => (
               <button
                 key={n}
-                className="shift"
-                onClick={() => {
-                  onTick(addDays(refISO, -n));
-                  setPickMode(null);
-                }}
+                className="shift shift-done"
+                onClick={() => onTick(addDays(refISO, -n))}
               >
-                {n === 1 ? 'Yesterday' : `${n} days ago`}
+                Done {n} day
               </button>
             ))}
             <button
-              className="shift"
-              onClick={() => setPickMode('calendar')}
+              className="shift shift-done"
+              onClick={() => setShowCalendar((v) => !v)}
             >
-              Pick date…
+              {showCalendar ? 'Cancel' : 'Done on'}
             </button>
           </div>
         )}
-        {pickMode === 'calendar' && (
+        {showCalendar && (
           <div className="shift-row">
             <input
               type="date"
@@ -486,13 +466,13 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
               onChange={(e) => setPickDate(e.target.value)}
             />
             <button
-              className="shift"
+              className="shift shift-done"
               onClick={() => {
                 onTick(pickDate);
-                setPickMode(null);
+                setShowCalendar(false);
               }}
             >
-              Tick on {pickDate}
+              Done on {pickDate}
             </button>
           </div>
         )}
