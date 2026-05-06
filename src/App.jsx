@@ -398,7 +398,8 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
   const badge = dueBadge(task, refISO);
   const b = bucketOf(task, refISO);
   const done = isDone(task, refISO);
-  const [pickDate, setPickDate] = useState(null);
+  const [pickMode, setPickMode] = useState(null); // null | 'options' | 'calendar'
+  const [pickDate, setPickDate] = useState(refISO);
 
   // Bucket-shift arrows — only when not done and only in bucket-specific subtabs.
   const arrows = [];
@@ -439,14 +440,43 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
             {!done && (
               <button
                 className="shift"
-                onClick={() => setPickDate(pickDate === null ? refISO : null)}
+                onClick={() => {
+                  if (pickMode === null) {
+                    setPickMode('options');
+                    setPickDate(refISO);
+                  } else {
+                    setPickMode(null);
+                  }
+                }}
               >
-                {pickDate === null ? 'Tick on…' : 'Cancel'}
+                {pickMode === null ? 'Tick on…' : 'Cancel'}
               </button>
             )}
           </div>
         )}
-        {pickDate !== null && (
+        {pickMode === 'options' && (
+          <div className="shift-row">
+            {[1, 2, 3, 4, 5, 6, 7].map((n) => (
+              <button
+                key={n}
+                className="shift"
+                onClick={() => {
+                  onTick(addDays(refISO, -n));
+                  setPickMode(null);
+                }}
+              >
+                {n === 1 ? 'Yesterday' : `${n} days ago`}
+              </button>
+            ))}
+            <button
+              className="shift"
+              onClick={() => setPickMode('calendar')}
+            >
+              Pick date…
+            </button>
+          </div>
+        )}
+        {pickMode === 'calendar' && (
           <div className="shift-row">
             <input
               type="date"
@@ -459,7 +489,7 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
               className="shift"
               onClick={() => {
                 onTick(pickDate);
-                setPickDate(null);
+                setPickMode(null);
               }}
             >
               Tick on {pickDate}
