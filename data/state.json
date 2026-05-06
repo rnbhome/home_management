@@ -59,7 +59,7 @@
       "id": 7,
       "room": "Kitchen",
       "task": "Sweep and mop floor",
-      "due_date": "2026-05-13",
+      "due_date": "2026-05-28",
       "done": false,
       "freq": "1m",
       "note": ""
@@ -106,7 +106,7 @@
       "room": "Kitchen",
       "task": "Clean dishwasher filter. Add salt. Add glass rinse.",
       "due_date": "2026-05-21",
-      "done": true,
+      "done": false,
       "freq": "2w",
       "note": "",
       "last_completed": "2026-05-07"
