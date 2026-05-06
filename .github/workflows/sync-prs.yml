@@ -3,6 +3,8 @@ name: Sync open PRs with main
 on:
   push:
     branches: [main]
+    # Skip syncing on app state writes — they'd just create conflicts.
+    paths-ignore: ['data/**']
   workflow_dispatch:
 
 permissions:
