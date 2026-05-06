@@ -56,6 +56,15 @@ function formatDayMonth(iso) {
 }
 
 // ---------- task helpers ----------
+// A task displays as "done" only while its next cycle is still in the future.
+// Once the due date arrives, the visual reverts to not-done so the user can
+// re-tick it for the next cycle without having to manually un-tick.
+function isDone(task, refISO) {
+  if (!task.done) return false;
+  if (task.freq === 'any') return task.last_completed === refISO;
+  return daysBetween(refISO, task.due_date) > 0;
+}
+
 function renderTaskName(text) {
   const parts = text.split(/(\*[^*\n]+\*)/g);
   return parts.map((part, i) => {
@@ -88,7 +97,9 @@ function dueBadge(task, refISO) {
 
 function sortTasksForRoom(list, refISO) {
   return [...list].sort((a, b) => {
-    if (a.done !== b.done) return a.done ? 1 : -1;
+    const aDone = isDone(a, refISO);
+    const bDone = isDone(b, refISO);
+    if (aDone !== bDone) return aDone ? 1 : -1;
     const da = a.freq === 'any' ? 0 : daysBetween(refISO, a.due_date);
     const db = b.freq === 'any' ? 0 : daysBetween(refISO, b.due_date);
     if (da !== db) return da - db;
@@ -136,7 +147,7 @@ function generateTaskListText(state, refISO, shiftDays) {
   lines.push('');
 
   const urgent = state.tasks.filter(
-    (t) => !t.done && bucketOf(t, refISO) === 'urgent'
+    (t) => !isDone(t, refISO) && bucketOf(t, refISO) === 'urgent'
   );
   const pickedIds = new Set();
 
@@ -205,10 +216,20 @@ function generateTaskListText(state, refISO, shiftDays) {
 }
 
 // ---------- small UI bits ----------
-function SaveStatus({ status }) {
+function SaveStatus({ status, error }) {
   if (status === 'saving') return <span className="save-status saving">💾 saving…</span>;
   if (status === 'saved') return <span className="save-status saved">✓ saved</span>;
-  if (status === 'error') return <span className="save-status error">⚠️ error</span>;
+  if (status === 'error') {
+    return (
+      <span
+        className="save-status error"
+        title={error || ''}
+        onClick={() => error && alert(error)}
+      >
+        ⚠️ tap for error
+      </span>
+    );
+  }
   return null;
 }
 
@@ -264,7 +285,7 @@ function TasksTab({ state, setState, refISO }) {
   const counts = useMemo(() => {
     const c = { urgent: 0, week: 0, later: 0 };
     for (const t of state.tasks) {
-      if (t.done) continue;
+      if (isDone(t, refISO)) continue;
       c[bucketOf(t, refISO)]++;
     }
     return c;
@@ -272,7 +293,7 @@ function TasksTab({ state, setState, refISO }) {
 
   const filtered = useMemo(() => {
     if (subtab === 'all') return state.tasks;
-    return state.tasks.filter((t) => !t.done && bucketOf(t, refISO) === subtab);
+    return state.tasks.filter((t) => !isDone(t, refISO) && bucketOf(t, refISO) === subtab);
   }, [state.tasks, subtab, refISO]);
 
   const byRoom = useMemo(() => {
@@ -289,7 +310,8 @@ function TasksTab({ state, setState, refISO }) {
     setCollapsed((c) => ({ ...c, [room]: !c[room] }));
 
   const tick = (task, onDate = refISO) => {
-    const updates = task.done
+    const eff = isDone(task, refISO);
+    const updates = eff
       ? { done: false }
       : {
           done: true,
@@ -375,11 +397,12 @@ function TasksTab({ state, setState, refISO }) {
 function TaskRow({ task, refISO, onTick, onShift, subtab }) {
   const badge = dueBadge(task, refISO);
   const b = bucketOf(task, refISO);
+  const done = isDone(task, refISO);
   const [pickDate, setPickDate] = useState(null);
 
   // Bucket-shift arrows — only when not done and only in bucket-specific subtabs.
   const arrows = [];
-  if (!task.done) {
+  if (!done) {
     if (b === 'urgent' && subtab !== 'all') {
       arrows.push({ label: '→ Week', days: 7 });
     } else if (b === 'week') {
@@ -390,14 +413,14 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
     }
   }
 
-  const showActionRow = !task.done || arrows.length > 0;
+  const showActionRow = !done || arrows.length > 0;
 
   return (
-    <li className={task.done ? 'task done' : 'task'}>
+    <li className={done ? 'task done' : 'task'}>
       <label className="check">
         <input
           type="checkbox"
-          checked={!!task.done}
+          checked={done}
           onChange={() => onTick()}
         />
         <span className="box" />
@@ -413,7 +436,7 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
                 {a.label}
               </button>
             ))}
-            {!task.done && (
+            {!done && (
               <button
                 className="shift"
                 onClick={() => setPickDate(pickDate === null ? refISO : null)}
@@ -713,8 +736,21 @@ export default function App() {
   const [state, _setState] = useState(null);
   const [loadError, setLoadError] = useState(null);
   const [saveStatus, setSaveStatus] = useState('idle');
+  const [saveError, setSaveError] = useState(null);
   const [tab, setTab] = useState('tasks');
-  const refISO = todayISO();
+  const [refISO, setRefISO] = useState(todayISO());
+
+  useEffect(() => {
+    const update = () => setRefISO(todayISO());
+    document.addEventListener('visibilitychange', update);
+    window.addEventListener('focus', update);
+    const interval = setInterval(update, 60_000);
+    return () => {
+      document.removeEventListener('visibilitychange', update);
+      window.removeEventListener('focus', update);
+      clearInterval(interval);
+    };
+  }, []);
 
   // Initial load.
   useEffect(() => {
@@ -751,12 +787,14 @@ export default function App() {
       try {
         await saveState(latestState.current);
         setSaveStatus('saved');
+        setSaveError(null);
         setTimeout(
           () => setSaveStatus((s) => (s === 'saved' ? 'idle' : s)),
           1500
         );
       } catch (e) {
         console.error(e);
+        setSaveError(e.message || String(e));
         setSaveStatus('error');
       }
     }, 500);
@@ -819,7 +857,7 @@ export default function App() {
           <h1>Home Manager</h1>
           <div className="hdr-meta">
             <span className="hdr-date">{formatDayMonth(refISO)}</span>
-            <SaveStatus status={saveStatus} />
+            <SaveStatus status={saveStatus} error={saveError} />
           </div>
         </div>
         <nav className="tabs">

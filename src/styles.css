@@ -96,6 +96,9 @@ body {
 }
 .save-status.error {
   color: #ffb4a6;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-style: dotted;
 }
 
 .tabs {
