@@ -1,0 +1,25 @@
+name: Sync open PRs with main
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-branches:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update each open PR branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          prs=$(gh pr list --repo "$GITHUB_REPOSITORY" --base main --state open --json number --jq '.[].number')
+          for n in $prs; do
+            echo "Updating PR #$n"
+            gh pr update-branch "$n" --repo "$GITHUB_REPOSITORY" || echo "  (skipped: already up to date or conflicts)"
+          done
