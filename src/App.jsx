@@ -445,14 +445,14 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
                 className="shift shift-done"
                 onClick={() => onTick(addDays(refISO, -n))}
               >
-                Done {n} day
+                ✓ {n} day
               </button>
             ))}
             <button
               className="shift shift-done"
               onClick={() => setShowCalendar((v) => !v)}
             >
-              {showCalendar ? 'Cancel' : 'Done on'}
+              {showCalendar ? 'Cancel' : '✓ on'}
             </button>
           </div>
         )}
@@ -472,7 +472,7 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
                 setShowCalendar(false);
               }}
             >
-              Done on {pickDate}
+              ✓ on {pickDate}
             </button>
           </div>
         )}
