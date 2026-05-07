@@ -14,11 +14,11 @@
       "id": 2,
       "room": "Kitchen",
       "task": "Cook food",
-      "due_date": "2026-05-14",
+      "due_date": "2026-05-07",
       "done": true,
       "freq": "1w",
       "note": "2 white plates. Leave outside, not in fridge.",
-      "last_completed": "2026-05-07"
+      "last_completed": "2026-04-30"
     },
     {
       "id": 3,
@@ -108,11 +108,11 @@
       "id": 41,
       "room": "Kitchen",
       "task": "Clean dishwasher filter. Add salt. Add glass rinse.",
-      "due_date": "2026-05-21",
-      "done": false,
+      "due_date": "2026-05-14",
+      "done": true,
       "freq": "2w",
       "note": "",
-      "last_completed": "2026-05-07"
+      "last_completed": "2026-04-30"
     },
     {
       "id": 10,
@@ -185,7 +185,7 @@
       "task": "Clean robo vacuum",
       "due_date": "2026-05-30",
       "done": true,
-      "freq": "1m",
+      "freq": "1w",
       "note": "",
       "last_completed": "2026-04-30"
     },
@@ -335,10 +335,11 @@
       "id": 37,
       "room": "Bathroom",
       "task": "Add toilet paper if less than 6 in toilet",
-      "due_date": "2026-05-11",
-      "done": false,
+      "due_date": "2026-05-07",
+      "done": true,
       "freq": "1w",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-04-30"
     },
     {
       "id": 39,
@@ -439,6 +440,162 @@
     },
     {
       "date": "2026-07-03",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-07-31",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-12-04",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-12-11",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-12-18",
       "bins": [
         "Blue bin",
         "Green bin"
