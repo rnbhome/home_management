@@ -4,10 +4,11 @@
       "id": 1,
       "room": "Kitchen",
       "task": "Put bin outside",
-      "due_date": "2026-04-28",
-      "done": false,
+      "due_date": "2026-05-14",
+      "done": true,
       "freq": "1w",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-05-07"
     },
     {
       "id": 2,
