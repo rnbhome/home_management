@@ -210,10 +210,11 @@
       "id": 35,
       "room": "Bedroom",
       "task": "Tidy bed",
-      "due_date": "2026-04-28",
-      "done": false,
+      "due_date": "2026-05-07",
+      "done": true,
       "freq": "1w",
-      "note": "Don't move the projector."
+      "note": "Don't move the projector.",
+      "last_completed": "2026-04-30"
     },
     {
       "id": 18,
