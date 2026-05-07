@@ -152,9 +152,6 @@ function generateTaskListText(state, refISO, shiftDays) {
   const pickedIds = new Set();
 
   const softener = urgent.find((t) => t.task === 'Regenerate softener');
-  const laundryFill = urgent.find(
-    (t) => t.room === 'Laundry' && t.task === 'Fill another load of laundry'
-  );
   const cook = urgent.find((t) => t.room === 'Kitchen' && t.task === 'Cook food');
 
   const section = (title, bullets) => {
@@ -174,10 +171,6 @@ function generateTaskListText(state, refISO, shiftDays) {
   if (softener) {
     section('⏱️ Start first', taskBullet(softener));
     pickedIds.add(softener.id);
-  }
-  if (laundryFill) {
-    section('🧺 Laundry', taskBullet(laundryFill));
-    pickedIds.add(laundryFill.id);
   }
   if (cook) {
     section('🍳 Kitchen', taskBullet(cook));
