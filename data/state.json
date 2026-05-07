@@ -4,19 +4,21 @@
       "id": 1,
       "room": "Kitchen",
       "task": "Put bin outside",
-      "due_date": "2026-04-28",
-      "done": false,
+      "due_date": "2026-05-14",
+      "done": true,
       "freq": "1w",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-05-07"
     },
     {
       "id": 2,
       "room": "Kitchen",
       "task": "Cook food",
-      "due_date": "2026-04-28",
-      "done": false,
+      "due_date": "2026-05-14",
+      "done": true,
       "freq": "1w",
-      "note": "2 white plates. Leave outside, not in fridge."
+      "note": "2 white plates. Leave outside, not in fridge.",
+      "last_completed": "2026-05-07"
     },
     {
       "id": 3,
@@ -41,10 +43,11 @@
       "id": 5,
       "room": "Kitchen",
       "task": "Clean sink counter",
-      "due_date": "2026-04-27",
-      "done": false,
+      "due_date": "2026-04-30",
+      "done": true,
       "freq": "any",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-04-30"
     },
     {
       "id": 6,
@@ -133,10 +136,11 @@
       "id": 34,
       "room": "Laundry",
       "task": "Fill another load of laundry",
-      "due_date": "2026-05-04",
-      "done": false,
+      "due_date": "2026-05-07",
+      "done": true,
       "freq": "1w",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-04-30"
     },
     {
       "id": 11,
@@ -151,10 +155,11 @@
       "id": 12,
       "room": "Laundry",
       "task": "Iron",
-      "due_date": "2026-04-28",
-      "done": false,
+      "due_date": "2026-05-07",
+      "done": true,
       "freq": "1w",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-04-30"
     },
     {
       "id": 13,
@@ -178,10 +183,11 @@
       "id": 15,
       "room": "Living Room",
       "task": "Clean robo vacuum",
-      "due_date": "2026-05-21",
-      "done": false,
+      "due_date": "2026-05-30",
+      "done": true,
       "freq": "1m",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-04-30"
     },
     {
       "id": 16,
@@ -205,19 +211,21 @@
       "id": 35,
       "room": "Bedroom",
       "task": "Tidy bed",
-      "due_date": "2026-04-28",
-      "done": false,
+      "due_date": "2026-05-07",
+      "done": true,
       "freq": "1w",
-      "note": "Don't move the projector."
+      "note": "Don't move the projector.",
+      "last_completed": "2026-04-30"
     },
     {
       "id": 18,
       "room": "Bedroom",
       "task": "Add water to humidifier",
-      "due_date": "2026-05-04",
-      "done": false,
+      "due_date": "2026-05-07",
+      "done": true,
       "freq": "1w",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-04-30"
     },
     {
       "id": 20,
@@ -232,28 +240,31 @@
       "id": 21,
       "room": "Bedroom",
       "task": "Change bed linen",
-      "due_date": "2026-05-05",
-      "done": false,
+      "due_date": "2026-05-14",
+      "done": true,
       "freq": "2w",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-04-30"
     },
     {
       "id": 22,
       "room": "Bedroom",
       "task": "Robo vacuum upstairs",
-      "due_date": "2026-04-28",
-      "done": false,
+      "due_date": "2026-05-07",
+      "done": true,
       "freq": "1w",
-      "note": "Make sure 1st floor is clear and all doors are open. Put vacuum back down before leaving."
+      "note": "Make sure 1st floor is clear and all doors are open. Put vacuum back down before leaving.",
+      "last_completed": "2026-04-30"
     },
     {
       "id": 23,
       "room": "Stairs",
       "task": "Vacuum stairs and edge",
-      "due_date": "2026-04-22",
-      "done": false,
+      "due_date": "2026-05-07",
+      "done": true,
       "freq": "1w",
-      "note": "Use stick vacuum."
+      "note": "Use stick vacuum.",
+      "last_completed": "2026-04-30"
     },
     {
       "id": 24,
@@ -277,19 +288,21 @@
       "id": 26,
       "room": "Bathroom",
       "task": "Regenerate softener",
-      "due_date": "2026-05-04",
-      "done": false,
+      "due_date": "2026-05-14",
+      "done": true,
       "freq": "1w",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-05-07"
     },
     {
       "id": 27,
       "room": "Bathroom",
       "task": "Clean toilet",
-      "due_date": "2026-05-04",
-      "done": false,
+      "due_date": "2026-05-07",
+      "done": true,
       "freq": "1w",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-04-30"
     },
     {
       "id": 28,
@@ -331,10 +344,11 @@
       "id": 39,
       "room": "Bathroom",
       "task": "Add *shower* water in sink containers",
-      "due_date": "2026-04-27",
-      "done": false,
+      "due_date": "2026-05-07",
+      "done": true,
       "freq": "1w",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-04-30"
     },
     {
       "id": 31,
