@@ -259,10 +259,11 @@
       "id": 23,
       "room": "Stairs",
       "task": "Vacuum stairs and edge",
-      "due_date": "2026-04-22",
-      "done": false,
+      "due_date": "2026-05-07",
+      "done": true,
       "freq": "1w",
-      "note": "Use stick vacuum."
+      "note": "Use stick vacuum.",
+      "last_completed": "2026-04-30"
     },
     {
       "id": 24,
