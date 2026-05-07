@@ -396,9 +396,9 @@ function TasksTab({ state, setState, refISO }) {
 function TaskRow({ task, refISO, onTick, onShift, subtab }) {
   const badge = dueBadge(task, refISO);
   const b = bucketOf(task, refISO);
-  // In bucket subtabs we surface the task by its next due date and treat it
-  // as actionable, regardless of whether it's currently flagged done.
-  const done = subtab === 'all' && isDone(task, refISO);
+  // Tasks are always shown as actionable: the recurring "done" state
+  // is reflected by the next-due bucket, not by struck-through styling.
+  const done = false;
   const [showMore, setShowMore] = useState(false);
   const [pickDate, setPickDate] = useState(refISO);
 
