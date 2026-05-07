@@ -443,6 +443,162 @@
         "Blue bin",
         "Green bin"
       ]
+    },
+    {
+      "date": "2026-07-10",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-07-31",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-12-04",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2026-12-11",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2026-12-18",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
     }
   ],
   "version": 2
