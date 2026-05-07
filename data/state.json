@@ -335,10 +335,11 @@
       "id": 37,
       "room": "Bathroom",
       "task": "Add toilet paper if less than 6 in toilet",
-      "due_date": "2026-05-11",
-      "done": false,
+      "due_date": "2026-05-07",
+      "done": true,
       "freq": "1w",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-04-30"
     },
     {
       "id": 39,
