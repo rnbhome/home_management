@@ -5,6 +5,11 @@ on:
     # Every Monday at 06:00 UTC.
     - cron: '0 6 * * 1'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fetch-bins.yml'
+      - 'scripts/fetch-bins.py'
 
 permissions:
   contents: write
