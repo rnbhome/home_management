@@ -285,7 +285,6 @@ function TasksTab({ state, setState, refISO }) {
   const counts = useMemo(() => {
     const c = { urgent: 0, week: 0, later: 0 };
     for (const t of state.tasks) {
-      if (isDone(t, refISO)) continue;
       c[bucketOf(t, refISO)]++;
     }
     return c;
@@ -293,7 +292,7 @@ function TasksTab({ state, setState, refISO }) {
 
   const filtered = useMemo(() => {
     if (subtab === 'all') return state.tasks;
-    return state.tasks.filter((t) => !isDone(t, refISO) && bucketOf(t, refISO) === subtab);
+    return state.tasks.filter((t) => bucketOf(t, refISO) === subtab);
   }, [state.tasks, subtab, refISO]);
 
   const byRoom = useMemo(() => {
@@ -397,7 +396,9 @@ function TasksTab({ state, setState, refISO }) {
 function TaskRow({ task, refISO, onTick, onShift, subtab }) {
   const badge = dueBadge(task, refISO);
   const b = bucketOf(task, refISO);
-  const done = isDone(task, refISO);
+  // In bucket subtabs we surface the task by its next due date and treat it
+  // as actionable, regardless of whether it's currently flagged done.
+  const done = subtab === 'all' && isDone(task, refISO);
   const [showMore, setShowMore] = useState(false);
   const [pickDate, setPickDate] = useState(refISO);
 
