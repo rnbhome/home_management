@@ -185,7 +185,7 @@
       "task": "Clean robo vacuum",
       "due_date": "2026-05-30",
       "done": true,
-      "freq": "1m",
+      "freq": "1w",
       "note": "",
       "last_completed": "2026-04-30"
     },
