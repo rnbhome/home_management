@@ -43,10 +43,11 @@
       "id": 5,
       "room": "Kitchen",
       "task": "Clean sink counter",
-      "due_date": "2026-04-27",
-      "done": false,
+      "due_date": "2026-04-30",
+      "done": true,
       "freq": "any",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-04-30"
     },
     {
       "id": 6,
