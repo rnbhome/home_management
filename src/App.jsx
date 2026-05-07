@@ -433,7 +433,7 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
         )}
         {!done && (
           <div className="shift-row">
-            {[1, 2, 3].map((n) => (
+            {[1, 2].map((n) => (
               <button
                 key={n}
                 className="shift shift-done"
@@ -452,7 +452,7 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
         )}
         {showMore && (
           <div className="shift-row">
-            {[4, 5, 6].map((n) => (
+            {[3, 4, 5, 6].map((n) => (
               <button
                 key={n}
                 className="shift shift-done"
