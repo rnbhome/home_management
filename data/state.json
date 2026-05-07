@@ -15,7 +15,7 @@
       "room": "Kitchen",
       "task": "Cook food",
       "due_date": "2026-05-14",
-      "done": true,
+      "done": false,
       "freq": "1w",
       "note": "2 white plates. Leave outside, not in fridge.",
       "last_completed": "2026-05-07"
