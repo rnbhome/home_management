@@ -398,7 +398,7 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
   const badge = dueBadge(task, refISO);
   const b = bucketOf(task, refISO);
   const done = isDone(task, refISO);
-  const [showCalendar, setShowCalendar] = useState(false);
+  const [showMore, setShowMore] = useState(false);
   const [pickDate, setPickDate] = useState(refISO);
 
   // Bucket-shift arrows — only when not done and only in bucket-specific subtabs.
@@ -439,7 +439,7 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
         )}
         {!done && (
           <div className="shift-row">
-            {[1, 2, 3, 4, 5, 6, 7].map((n) => (
+            {[1, 2, 3].map((n) => (
               <button
                 key={n}
                 className="shift shift-done"
@@ -450,14 +450,35 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
             ))}
             <button
               className="shift shift-done"
-              onClick={() => setShowCalendar((v) => !v)}
+              onClick={() => setShowMore((v) => !v)}
             >
-              {showCalendar ? 'Cancel' : '✓ on'}
+              {showMore ? 'Cancel' : '✓ on…'}
             </button>
           </div>
         )}
-        {showCalendar && (
+        {showMore && (
           <div className="shift-row">
+            {[4, 5, 6].map((n) => (
+              <button
+                key={n}
+                className="shift shift-done"
+                onClick={() => {
+                  onTick(addDays(refISO, -n));
+                  setShowMore(false);
+                }}
+              >
+                ✓ {n} day
+              </button>
+            ))}
+            <button
+              className="shift shift-done"
+              onClick={() => {
+                onTick(addDays(refISO, -7));
+                setShowMore(false);
+              }}
+            >
+              ✓ 1 week
+            </button>
             <input
               type="date"
               className="input input-inline"
@@ -469,7 +490,7 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
               className="shift shift-done"
               onClick={() => {
                 onTick(pickDate);
-                setShowCalendar(false);
+                setShowMore(false);
               }}
             >
               ✓ on {pickDate}
