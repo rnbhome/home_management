@@ -344,7 +344,7 @@
     {
       "id": 39,
       "room": "Bathroom",
-      "task": "Add *shower* water in sink containers",
+      "task": "Add shower water in sink bottle",
       "due_date": "2026-05-07",
       "done": true,
       "freq": "1w",
