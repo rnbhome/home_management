@@ -316,12 +316,17 @@ function TasksTab({ state, setState, refISO }) {
     }));
   };
 
-  const shift = (task, daysFromToday) => {
+  const shift = (task, arrow) => {
     setState((s) => ({
       ...s,
-      tasks: s.tasks.map((t) =>
-        t.id === task.id ? { ...t, due_date: addDays(refISO, daysFromToday) } : t
-      )
+      tasks: s.tasks.map((t) => {
+        if (t.id !== task.id) return t;
+        const newDate =
+          typeof arrow.delta === 'number'
+            ? addDays(t.due_date, arrow.delta)
+            : addDays(refISO, arrow.days);
+        return { ...t, due_date: newDate };
+      })
     }));
   };
 
@@ -369,7 +374,7 @@ function TasksTab({ state, setState, refISO }) {
                     task={t}
                     refISO={refISO}
                     onTick={(date) => tick(t, date)}
-                    onShift={(d) => shift(t, d)}
+                    onShift={(a) => shift(t, a)}
                     subtab={subtab}
                   />
                 ))}
@@ -398,6 +403,7 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
   // Bucket-shift arrows — only when not done and only in bucket-specific subtabs.
   const arrows = [];
   if (!done) {
+    arrows.push({ label: '← 4 Days', delta: -4 });
     if (b === 'urgent' && subtab !== 'all') {
       arrows.push({ label: '→ Week', days: 7 });
     } else if (b === 'week') {
@@ -406,6 +412,7 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
     } else if (b === 'later') {
       arrows.push({ label: '← Week', days: 7 });
     }
+    arrows.push({ label: '→ 4 Days', delta: 4 });
   }
 
   return (
@@ -425,7 +432,7 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
         {arrows.length > 0 && (
           <div className="shift-row">
             {arrows.map((a) => (
-              <button key={a.label} className="shift" onClick={() => onShift(a.days)}>
+              <button key={a.label} className="shift" onClick={() => onShift(a)}>
                 {a.label}
               </button>
             ))}
