@@ -14,7 +14,7 @@
       "id": 2,
       "room": "Kitchen",
       "task": "Cook food",
-      "due_date": "2026-05-07",
+      "due_date": "2026-05-14",
       "done": true,
       "freq": "1w",
       "note": "2 white plates. Leave outside, not in fridge.",
@@ -53,7 +53,7 @@
       "id": 6,
       "room": "Kitchen",
       "task": "Clean microwave & toaster",
-      "due_date": "2026-05-06",
+      "due_date": "2026-05-14",
       "done": false,
       "freq": "1m",
       "note": ""
