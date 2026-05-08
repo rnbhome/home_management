@@ -118,7 +118,7 @@
       "id": 10,
       "room": "Laundry",
       "task": "Fold clothes from rack",
-      "due_date": "2026-04-27",
+      "due_date": "2026-05-01",
       "done": false,
       "freq": "any",
       "note": ""
