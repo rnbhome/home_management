@@ -232,10 +232,11 @@
       "id": 20,
       "room": "Bedroom",
       "task": "Add water to bottles",
-      "due_date": "2026-04-29",
-      "done": false,
+      "due_date": "2026-05-09",
+      "done": true,
       "freq": "any",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-05-09"
     },
     {
       "id": 21,
