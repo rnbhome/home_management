@@ -212,11 +212,11 @@
       "id": 35,
       "room": "Bedroom",
       "task": "Tidy bed",
-      "due_date": "2026-05-07",
+      "due_date": "2026-05-16",
       "done": true,
       "freq": "1w",
       "note": "Don't move the projector.",
-      "last_completed": "2026-04-30"
+      "last_completed": "2026-05-09"
     },
     {
       "id": 18,
