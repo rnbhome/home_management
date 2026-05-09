@@ -33,11 +33,11 @@
       "id": 4,
       "room": "Kitchen",
       "task": "Powder & clean shakers",
-      "due_date": "2026-04-30",
+      "due_date": "2026-05-09",
       "done": true,
       "freq": "any",
       "note": "",
-      "last_completed": "2026-04-30"
+      "last_completed": "2026-05-09"
     },
     {
       "id": 5,
