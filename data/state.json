@@ -35,7 +35,7 @@
       "task": "Powder & clean shakers",
       "due_date": "2026-05-09",
       "done": true,
-      "freq": "any",
+      "freq": "1w",
       "note": "",
       "last_completed": "2026-05-09"
     },
