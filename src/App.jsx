@@ -403,7 +403,7 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
   // Bucket-shift arrows — only when not done and only in bucket-specific subtabs.
   const arrows = [];
   if (!done) {
-    arrows.push({ label: '← 4 Days', delta: -4 });
+    arrows.push({ label: '← 4 day', delta: -4 });
     if (b === 'urgent' && subtab !== 'all') {
       arrows.push({ label: '→ Week', days: 7 });
     } else if (b === 'week') {
@@ -412,7 +412,7 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
     } else if (b === 'later') {
       arrows.push({ label: '← Week', days: 7 });
     }
-    arrows.push({ label: '→ 4 Days', delta: 4 });
+    arrows.push({ label: '→ 4 day', delta: 4 });
   }
 
   return (
