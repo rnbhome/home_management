@@ -32,7 +32,7 @@
     {
       "id": 4,
       "room": "Kitchen",
-      "task": "Powder & clean shakers",
+      "task": "Add huel powders to bottles",
       "due_date": "2026-05-09",
       "done": true,
       "freq": "1w",
