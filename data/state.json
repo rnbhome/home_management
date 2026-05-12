@@ -355,15 +355,6 @@
       "last_completed": "2026-04-30"
     },
     {
-      "id": 31,
-      "room": "Garden",
-      "task": "Mow lawn",
-      "due_date": "2026-05-20",
-      "done": false,
-      "freq": "2w",
-      "note": ""
-    },
-    {
       "id": 32,
       "room": "Garden",
       "task": "Put outside tap",
