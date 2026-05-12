@@ -140,6 +140,7 @@ function parseDayShift(text, refISO) {
 }
 
 // ---------- Task List generation ----------
+// Task list includes every task due within today + 3 days, regardless of done state.
 function generateTaskListText(state, refISO, shiftDays) {
   const lines = [];
   lines.push('🏠 Task List');
