@@ -147,7 +147,7 @@ function generateTaskListText(state, refISO, shiftDays) {
   lines.push('');
 
   const urgent = state.tasks.filter(
-    (t) => !isDone(t, refISO) && bucketOf(t, refISO) === 'urgent'
+    (t) => bucketOf(t, refISO) === 'urgent'
   );
   const pickedIds = new Set();
 

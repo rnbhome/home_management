@@ -14,7 +14,7 @@
       "id": 2,
       "room": "Kitchen",
       "task": "Cook food",
-      "due_date": "2026-05-10",
+      "due_date": "2026-05-14",
       "done": true,
       "freq": "1w",
       "note": "2 white plates. Leave outside, not in fridge.",
@@ -33,11 +33,11 @@
       "id": 4,
       "room": "Kitchen",
       "task": "Add huel powders to bottles",
-      "due_date": "2026-05-09",
+      "due_date": "2026-05-17",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-05-09"
+      "last_completed": "2026-05-10"
     },
     {
       "id": 5,
@@ -137,7 +137,7 @@
       "id": 34,
       "room": "Laundry",
       "task": "Fill another load of laundry",
-      "due_date": "2026-05-15",
+      "due_date": "2026-05-19",
       "done": false,
       "freq": "1w",
       "note": "",
@@ -358,7 +358,7 @@
       "id": 31,
       "room": "Garden",
       "task": "Mow lawn",
-      "due_date": "2026-05-15",
+      "due_date": "2026-05-20",
       "done": false,
       "freq": "2w",
       "note": ""
