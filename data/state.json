@@ -4,11 +4,11 @@
       "id": 1,
       "room": "Kitchen",
       "task": "Throw rubbish",
-      "due_date": "2026-05-21",
+      "due_date": "2026-05-25",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-05-14"
+      "last_completed": "2026-05-18"
     },
     {
       "id": 2,
@@ -32,22 +32,22 @@
     {
       "id": 4,
       "room": "Kitchen",
-      "task": "Add huel powders to bottles",
-      "due_date": "2026-05-17",
+      "task": "Add food powder to jars",
+      "due_date": "2026-05-25",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-05-14"
+      "last_completed": "2026-05-18"
     },
     {
       "id": 5,
       "room": "Kitchen",
       "task": "Clean sink counter",
-      "due_date": "2026-05-14",
+      "due_date": "2026-05-18",
       "done": true,
       "freq": "any",
       "note": "",
-      "last_completed": "2026-05-14"
+      "last_completed": "2026-05-18"
     },
     {
       "id": 6,
@@ -89,21 +89,21 @@
       "id": 38,
       "room": "Kitchen",
       "task": "Check beer & Coke Zero in fridge",
-      "due_date": "2026-05-21",
+      "due_date": "2026-05-25",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-05-14"
+      "last_completed": "2026-05-18"
     },
     {
       "id": 40,
       "room": "Kitchen",
       "task": "Empty dishwasher",
-      "due_date": "2026-05-17",
+      "due_date": "2026-05-25",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-05-14"
+      "last_completed": "2026-05-18"
     },
     {
       "id": 41,
@@ -128,11 +128,11 @@
       "id": 36,
       "room": "Laundry",
       "task": "Dry clothes in washing machine",
-      "due_date": "2026-05-14",
+      "due_date": "2026-05-18",
       "done": true,
       "freq": "any",
       "note": "",
-      "last_completed": "2026-05-14"
+      "last_completed": "2026-05-18"
     },
     {
       "id": 34,
@@ -157,11 +157,11 @@
       "id": 12,
       "room": "Laundry",
       "task": "Iron",
-      "due_date": "2026-05-17",
+      "due_date": "2026-05-25",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-05-14"
+      "last_completed": "2026-05-18"
     },
     {
       "id": 13,
@@ -195,10 +195,11 @@
       "id": 16,
       "room": "Living Room",
       "task": "Dust (thorough)",
-      "due_date": "2026-05-16",
-      "done": false,
+      "due_date": "2026-06-17",
+      "done": true,
       "freq": "1m",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-05-18"
     },
     {
       "id": 17,
@@ -213,61 +214,61 @@
       "id": 35,
       "room": "Bedroom",
       "task": "Tidy bed",
-      "due_date": "2026-05-16",
+      "due_date": "2026-05-25",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-05-09"
+      "last_completed": "2026-05-18"
     },
     {
       "id": 18,
       "room": "Bedroom",
       "task": "Add water to humidifier",
-      "due_date": "2026-05-16",
+      "due_date": "2026-05-25",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-05-09"
+      "last_completed": "2026-05-18"
     },
     {
       "id": 20,
       "room": "Bedroom",
       "task": "Add water to bottles",
-      "due_date": "2026-05-14",
+      "due_date": "2026-05-18",
       "done": true,
       "freq": "any",
       "note": "",
-      "last_completed": "2026-05-14"
+      "last_completed": "2026-05-18"
     },
     {
       "id": 21,
       "room": "Bedroom",
       "task": "Change bed linen",
-      "due_date": "2026-05-14",
+      "due_date": "2026-06-01",
       "done": true,
       "freq": "2w",
       "note": "",
-      "last_completed": "2026-04-30"
+      "last_completed": "2026-05-18"
     },
     {
       "id": 22,
       "room": "Bedroom",
       "task": "Robo vacuum upstairs",
-      "due_date": "2026-05-15",
+      "due_date": "2026-05-25",
       "done": true,
       "freq": "1w",
       "note": "Make sure 1st floor is clear and all doors are open. Put vacuum back down before leaving.",
-      "last_completed": "2026-04-30"
+      "last_completed": "2026-05-18"
     },
     {
       "id": 23,
       "room": "Stairs",
       "task": "Vacuum stairs and edge",
-      "due_date": "2026-05-11",
+      "due_date": "2026-05-25",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-04-30"
+      "last_completed": "2026-05-18"
     },
     {
       "id": 24,
@@ -302,11 +303,11 @@
       "id": 27,
       "room": "Bathroom",
       "task": "Clean toilet",
-      "due_date": "2026-05-15",
+      "due_date": "2026-05-25",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-04-30"
+      "last_completed": "2026-05-18"
     },
     {
       "id": 28,
