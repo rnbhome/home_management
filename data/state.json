@@ -17,7 +17,7 @@
       "due_date": "2026-05-25",
       "done": true,
       "freq": "1w",
-      "note": "2 white plates. Leave outside, not in fridge. Add one Brazil nut per box/plate.",
+      "note": "2 white plates. Leave outside, not in fridge.",
       "last_completed": "2026-05-14"
     },
     {
@@ -32,7 +32,7 @@
     {
       "id": 4,
       "room": "Kitchen",
-      "task": "Add food powder to jars",
+      "task": "Add huel powders to bottles",
       "due_date": "2026-05-25",
       "done": true,
       "freq": "1w",
@@ -313,7 +313,7 @@
       "id": 28,
       "room": "Bathroom",
       "task": "Mop floor",
-      "due_date": "2026-05-16",
+      "due_date": "2026-05-25",
       "done": false,
       "freq": "1m",
       "note": ""
