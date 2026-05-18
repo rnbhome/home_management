@@ -303,11 +303,11 @@
       "id": 27,
       "room": "Bathroom",
       "task": "Clean toilet",
-      "due_date": "2026-05-15",
+      "due_date": "2026-05-25",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-04-30"
+      "last_completed": "2026-05-18"
     },
     {
       "id": 28,
