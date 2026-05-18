@@ -3,7 +3,7 @@
     {
       "id": 1,
       "room": "Kitchen",
-      "task": "Put bin outside",
+      "task": "Throw rubbish",
       "due_date": "2026-05-21",
       "done": true,
       "freq": "1w",
