@@ -209,8 +209,7 @@ function generateTaskListText(state, refISO, shiftDays) {
         : daysAgo === 1
         ? 'yesterday'
         : `${daysAgo} days ago`;
-    const joined = lastBin.bins.join(' & ');
-    section(`🗑️ Bins — collection ${when}`, [`  • Put ${joined} inside`]);
+    section(`🗑️ Bins — collection ${when}`, [`  • Return bins inside`]);
   }
 
   // Remaining urgent tasks grouped by room.
