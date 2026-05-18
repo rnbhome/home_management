@@ -189,7 +189,7 @@ function generateTaskListText(state, refISO, shiftDays) {
       const when =
         daysAway === 1 ? 'tomorrow' : daysAway === 2 ? 'in 2 days' : 'in 3 days';
       const joined = nextBin.bins.join(' & ');
-      section(`🗑️ Bins — collection ${when}`, [`  • Throw rubbish — ${joined}`]);
+      section(`🗑️ Bins — collection ${when}`, [`  • Put ${joined} outside`]);
     }
   }
 
