@@ -33,11 +33,11 @@
       "id": 4,
       "room": "Kitchen",
       "task": "Add huel powders to bottles",
-      "due_date": "2026-05-17",
+      "due_date": "2026-05-25",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-05-14"
+      "last_completed": "2026-05-18"
     },
     {
       "id": 5,
