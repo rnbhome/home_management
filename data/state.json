@@ -216,7 +216,7 @@
       "due_date": "2026-05-16",
       "done": true,
       "freq": "1w",
-      "note": "Don't move the projector.",
+      "note": "",
       "last_completed": "2026-05-09"
     },
     {
@@ -266,7 +266,7 @@
       "due_date": "2026-05-11",
       "done": true,
       "freq": "1w",
-      "note": "Use stick vacuum.",
+      "note": "",
       "last_completed": "2026-04-30"
     },
     {
