@@ -90,7 +90,7 @@
       "room": "Kitchen",
       "task": "Check beer & Coke Zero in fridge",
       "due_date": "2026-05-21",
-      "done": true,
+      "done": false,
       "freq": "1w",
       "note": "",
       "last_completed": "2026-05-14"
