@@ -195,10 +195,11 @@
       "id": 16,
       "room": "Living Room",
       "task": "Dust (thorough)",
-      "due_date": "2026-05-16",
-      "done": false,
+      "due_date": "2026-06-17",
+      "done": true,
       "freq": "1m",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-05-18"
     },
     {
       "id": 17,
