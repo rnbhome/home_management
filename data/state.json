@@ -312,7 +312,7 @@
     {
       "id": 28,
       "room": "Bathroom",
-      "task": "Mop floor",
+      "task": "Sweep and mop floor",
       "due_date": "2026-05-29",
       "done": false,
       "freq": "1m",
