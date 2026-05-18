@@ -193,6 +193,26 @@ function generateTaskListText(state, refISO, shiftDays) {
     }
   }
 
+  // Bring-bin-back: most recent past collection within the last 3 days (inclusive of today).
+  const recentBins = state.bins
+    .filter((b) => {
+      const d = daysBetween(b.date, refISO);
+      return d >= 0 && d <= 3;
+    })
+    .sort((a, b) => (a.date > b.date ? -1 : 1));
+  if (recentBins.length) {
+    const lastBin = recentBins[0];
+    const daysAgo = daysBetween(lastBin.date, refISO);
+    const when =
+      daysAgo === 0
+        ? 'today'
+        : daysAgo === 1
+        ? 'yesterday'
+        : `${daysAgo} days ago`;
+    const joined = lastBin.bins.join(' & ');
+    section(`🗑️ Bins — collection ${when}`, [`  • Put ${joined} inside`]);
+  }
+
   // Remaining urgent tasks grouped by room.
   for (const room of ROOM_ORDER) {
     if (room === 'Laundry' || room === 'Kitchen') {
