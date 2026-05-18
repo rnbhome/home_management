@@ -4,21 +4,21 @@
       "id": 1,
       "room": "Kitchen",
       "task": "Put bin outside",
-      "due_date": "2026-05-14",
+      "due_date": "2026-05-21",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-05-07"
+      "last_completed": "2026-05-14"
     },
     {
       "id": 2,
       "room": "Kitchen",
       "task": "Cook food",
-      "due_date": "2026-05-14",
+      "due_date": "2026-05-21",
       "done": true,
       "freq": "1w",
       "note": "2 white plates. Leave outside, not in fridge.",
-      "last_completed": "2026-04-30"
+      "last_completed": "2026-05-14"
     },
     {
       "id": 3,
@@ -37,23 +37,23 @@
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-05-10"
+      "last_completed": "2026-05-14"
     },
     {
       "id": 5,
       "room": "Kitchen",
       "task": "Clean sink counter",
-      "due_date": "2026-05-09",
+      "due_date": "2026-05-14",
       "done": true,
       "freq": "any",
       "note": "",
-      "last_completed": "2026-05-09"
+      "last_completed": "2026-05-14"
     },
     {
       "id": 6,
       "room": "Kitchen",
       "task": "Clean microwave & toaster",
-      "due_date": "2026-05-10",
+      "due_date": "2026-05-18",
       "done": false,
       "freq": "1m",
       "note": ""
@@ -89,30 +89,31 @@
       "id": 38,
       "room": "Kitchen",
       "task": "Check beer & Coke Zero in fridge",
-      "due_date": "2026-05-05",
-      "done": false,
+      "due_date": "2026-05-21",
+      "done": true,
       "freq": "1w",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-05-14"
     },
     {
       "id": 40,
       "room": "Kitchen",
       "task": "Empty dishwasher",
-      "due_date": "2026-05-16",
+      "due_date": "2026-05-17",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-05-09"
+      "last_completed": "2026-05-14"
     },
     {
       "id": 41,
       "room": "Kitchen",
       "task": "Clean dishwasher filter. Add salt. Add glass rinse.",
-      "due_date": "2026-05-10",
+      "due_date": "2026-05-28",
       "done": true,
       "freq": "2w",
       "note": "",
-      "last_completed": "2026-04-30"
+      "last_completed": "2026-05-14"
     },
     {
       "id": 10,
@@ -127,11 +128,11 @@
       "id": 36,
       "room": "Laundry",
       "task": "Dry clothes in washing machine",
-      "due_date": "2026-05-13",
+      "due_date": "2026-05-14",
       "done": true,
       "freq": "any",
       "note": "",
-      "last_completed": "2026-05-09"
+      "last_completed": "2026-05-14"
     },
     {
       "id": 34,
@@ -156,11 +157,11 @@
       "id": 12,
       "room": "Laundry",
       "task": "Iron",
-      "due_date": "2026-05-12",
+      "due_date": "2026-05-17",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-05-09"
+      "last_completed": "2026-05-14"
     },
     {
       "id": 13,
@@ -194,7 +195,7 @@
       "id": 16,
       "room": "Living Room",
       "task": "Dust (thorough)",
-      "due_date": "2026-05-12",
+      "due_date": "2026-05-16",
       "done": false,
       "freq": "1m",
       "note": ""
@@ -232,11 +233,11 @@
       "id": 20,
       "room": "Bedroom",
       "task": "Add water to bottles",
-      "due_date": "2026-05-09",
+      "due_date": "2026-05-14",
       "done": true,
       "freq": "any",
       "note": "",
-      "last_completed": "2026-05-09"
+      "last_completed": "2026-05-14"
     },
     {
       "id": 21,
@@ -291,11 +292,11 @@
       "id": 26,
       "room": "Bathroom",
       "task": "Regenerate softener",
-      "due_date": "2026-05-14",
+      "due_date": "2026-05-21",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-05-07"
+      "last_completed": "2026-05-14"
     },
     {
       "id": 27,
@@ -311,7 +312,7 @@
       "id": 28,
       "room": "Bathroom",
       "task": "Mop floor",
-      "due_date": "2026-05-15",
+      "due_date": "2026-05-16",
       "done": false,
       "freq": "1m",
       "note": ""
@@ -338,21 +339,21 @@
       "id": 37,
       "room": "Bathroom",
       "task": "Add toilet paper if less than 6 in toilet",
-      "due_date": "2026-05-07",
+      "due_date": "2026-05-21",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-04-30"
+      "last_completed": "2026-05-14"
     },
     {
       "id": 39,
       "room": "Bathroom",
       "task": "Add shower water in sink bottle",
-      "due_date": "2026-05-15",
+      "due_date": "2026-05-21",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-04-30"
+      "last_completed": "2026-05-14"
     },
     {
       "id": 32,
