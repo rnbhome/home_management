@@ -194,22 +194,13 @@ function generateTaskListText(state, refISO, shiftDays) {
   }
 
   // Bring-bin-back: most recent past collection within the last 3 days (inclusive of today).
-  const recentBins = state.bins
-    .filter((b) => {
-      const d = daysBetween(b.date, refISO);
-      return d >= 0 && d <= 3;
-    })
-    .sort((a, b) => (a.date > b.date ? -1 : 1));
-  if (recentBins.length) {
-    const lastBin = recentBins[0];
-    const daysAgo = daysBetween(lastBin.date, refISO);
-    const when =
-      daysAgo === 0
-        ? 'today'
-        : daysAgo === 1
-        ? 'yesterday'
-        : `${daysAgo} days ago`;
-    section(`🗑️ Bins — collection ${when}`, [`  • Return bins inside`]);
+  const hasRecentCollection = state.bins.some((b) => {
+    const d = daysBetween(b.date, refISO);
+    return d >= 0 && d <= 3;
+  });
+  if (hasRecentCollection) {
+    lines.push('  • Return bins inside');
+    lines.push('');
   }
 
   // Remaining urgent tasks grouped by room.
