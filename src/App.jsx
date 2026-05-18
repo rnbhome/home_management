@@ -428,7 +428,6 @@ function TaskRow({ task, refISO, onTick, onShift, subtab }) {
     if (b === 'urgent' && subtab !== 'all') {
       arrows.push({ label: '→ Week', days: 7 });
     } else if (b === 'week') {
-      arrows.push({ label: '← 3 Days', days: 2 });
       arrows.push({ label: '→ Later', days: 21 });
     } else if (b === 'later') {
       arrows.push({ label: '← Week', days: 7 });
