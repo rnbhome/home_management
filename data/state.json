@@ -264,11 +264,11 @@
       "id": 23,
       "room": "Stairs",
       "task": "Vacuum stairs and edge",
-      "due_date": "2026-05-11",
+      "due_date": "2026-05-25",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-04-30"
+      "last_completed": "2026-05-18"
     },
     {
       "id": 24,
