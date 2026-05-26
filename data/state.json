@@ -284,10 +284,11 @@
       "id": 19,
       "room": "Bathroom",
       "task": "Collect all garbage",
-      "due_date": "2026-04-27",
-      "done": false,
+      "due_date": "2026-05-26",
+      "done": true,
       "freq": "any",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-05-26"
     },
     {
       "id": 26,
