@@ -24,10 +24,11 @@
       "id": 3,
       "room": "Kitchen",
       "task": "Clean oven",
-      "due_date": "2026-07-05",
-      "done": false,
+      "due_date": "2026-08-25",
+      "done": true,
       "freq": "3m",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-05-27"
     },
     {
       "id": 4,
