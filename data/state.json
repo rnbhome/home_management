@@ -295,7 +295,7 @@
       "room": "Bathroom",
       "task": "Regenerate softener",
       "due_date": "2026-05-30",
-      "done": true,
+      "done": false,
       "freq": "1w",
       "note": "",
       "last_completed": "2026-05-23"
