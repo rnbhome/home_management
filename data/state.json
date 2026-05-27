@@ -236,11 +236,11 @@
       "id": 20,
       "room": "Bedroom",
       "task": "Add water to bottles",
-      "due_date": "2026-05-26",
+      "due_date": "2026-05-27",
       "done": true,
       "freq": "any",
       "note": "",
-      "last_completed": "2026-05-26"
+      "last_completed": "2026-05-27"
     },
     {
       "id": 21,
