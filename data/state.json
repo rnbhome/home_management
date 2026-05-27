@@ -355,7 +355,7 @@
       "room": "Bathroom",
       "task": "Add shower water in sink bottle",
       "due_date": "2026-05-29",
-      "done": true,
+      "done": false,
       "freq": "1w",
       "note": "",
       "last_completed": "2026-05-14"
