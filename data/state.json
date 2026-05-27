@@ -62,10 +62,11 @@
       "id": 7,
       "room": "Kitchen",
       "task": "Sweep and mop floor",
-      "due_date": "2026-06-01",
-      "done": false,
+      "due_date": "2026-06-26",
+      "done": true,
       "freq": "1m",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-05-27"
     },
     {
       "id": 8,
