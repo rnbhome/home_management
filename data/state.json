@@ -131,7 +131,7 @@
       "id": 36,
       "room": "Laundry",
       "task": "Dry clothes in washing machine",
-      "due_date": "2026-05-26",
+      "due_date": "2026-05-30",
       "done": true,
       "freq": "any",
       "note": "",
