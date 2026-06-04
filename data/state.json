@@ -112,11 +112,11 @@
       "id": 41,
       "room": "Kitchen",
       "task": "Clean dishwasher filter. Add salt. Add glass rinse.",
-      "due_date": "2026-06-05",
-      "done": false,
+      "due_date": "2026-06-18",
+      "done": true,
       "freq": "2w",
       "note": "",
-      "last_completed": "2026-05-26"
+      "last_completed": "2026-06-04"
     },
     {
       "id": 10,
