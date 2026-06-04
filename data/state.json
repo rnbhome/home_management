@@ -188,11 +188,11 @@
       "id": 15,
       "room": "Living Room",
       "task": "Clean robo vacuum",
-      "due_date": "2026-05-31",
+      "due_date": "2026-06-11",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-05-24"
+      "last_completed": "2026-06-04"
     },
     {
       "id": 16,
