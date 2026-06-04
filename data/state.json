@@ -208,10 +208,11 @@
       "id": 17,
       "room": "Bedroom",
       "task": "Dust (thorough)",
-      "due_date": "2026-06-08",
-      "done": false,
+      "due_date": "2026-07-04",
+      "done": true,
       "freq": "1m",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-06-04"
     },
     {
       "id": 35,
