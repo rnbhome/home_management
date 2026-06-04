@@ -218,7 +218,7 @@
       "room": "Bedroom",
       "task": "Tidy bed",
       "due_date": "2026-06-06",
-      "done": true,
+      "done": false,
       "freq": "1w",
       "note": "",
       "last_completed": "2026-05-26"
