@@ -142,7 +142,7 @@
       "room": "Laundry",
       "task": "Fill another load of laundry",
       "due_date": "2026-07-08",
-      "done": true,
+      "done": false,
       "freq": "1w",
       "note": "",
       "last_completed": "2026-07-01"
