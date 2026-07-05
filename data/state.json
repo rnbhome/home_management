@@ -14,11 +14,11 @@
       "id": 2,
       "room": "Kitchen",
       "task": "Cook food",
-      "due_date": "2026-06-20",
+      "due_date": "2026-07-12",
       "done": true,
       "freq": "1w",
       "note": "2 white plates. Leave outside, not in fridge. Add one Brazil nut per box/plate.",
-      "last_completed": "2026-06-13"
+      "last_completed": "2026-07-05"
     },
     {
       "id": 3,
