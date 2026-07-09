@@ -65,7 +65,7 @@
       "room": "Kitchen",
       "task": "Sweep and mop floor",
       "due_date": "2026-08-05",
-      "done": true,
+      "done": false,
       "freq": "1m",
       "note": "",
       "last_completed": "2026-07-06"
