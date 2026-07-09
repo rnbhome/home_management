@@ -309,11 +309,11 @@
       "id": 27,
       "room": "Bathroom",
       "task": "Clean toilet",
-      "due_date": "2026-07-08",
+      "due_date": "2026-07-16",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-07-01"
+      "last_completed": "2026-07-09"
     },
     {
       "id": 28,
