@@ -299,11 +299,11 @@
       "id": 26,
       "room": "Bathroom",
       "task": "Regenerate softener",
-      "due_date": "2026-07-06",
+      "due_date": "2026-07-18",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-06-29"
+      "last_completed": "2026-07-11"
     },
     {
       "id": 27,
