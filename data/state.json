@@ -350,7 +350,7 @@
       "room": "Bathroom",
       "task": "Add toilet paper if less than 6 in toilet",
       "due_date": "2026-07-13",
-      "done": true,
+      "done": false,
       "freq": "1w",
       "note": "",
       "last_completed": "2026-07-06"
