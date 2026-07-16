@@ -74,10 +74,11 @@
       "id": 8,
       "room": "Kitchen",
       "task": "Clean trash can",
-      "due_date": "2026-06-12",
-      "done": false,
+      "due_date": "2026-08-15",
+      "done": true,
       "freq": "1m",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-07-16"
     },
     {
       "id": 9,
