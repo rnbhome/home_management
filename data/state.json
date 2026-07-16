@@ -379,10 +379,11 @@
       "id": 33,
       "room": "Car",
       "task": "Wash outside",
-      "due_date": "2026-06-13",
-      "done": false,
+      "due_date": "2026-08-15",
+      "done": true,
       "freq": "1m",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-07-16"
     }
   ],
   "bins": [
