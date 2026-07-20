@@ -93,11 +93,11 @@
       "id": 38,
       "room": "Kitchen",
       "task": "Check beer & Coke Zero in fridge",
-      "due_date": "2026-07-18",
+      "due_date": "2026-07-27",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-07-11"
+      "last_completed": "2026-07-20"
     },
     {
       "id": 40,
