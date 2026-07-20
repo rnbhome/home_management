@@ -4,11 +4,11 @@
       "id": 1,
       "room": "Kitchen",
       "task": "Throw rubbish",
-      "due_date": "2026-07-18",
+      "due_date": "2026-07-27",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-07-11"
+      "last_completed": "2026-07-20"
     },
     {
       "id": 2,
