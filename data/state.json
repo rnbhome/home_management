@@ -152,7 +152,7 @@
       "id": 11,
       "room": "Laundry",
       "task": "Wash and fluff towels",
-      "due_date": "2026-07-04",
+      "due_date": "2026-07-24",
       "done": false,
       "freq": "2m",
       "note": ""
@@ -161,7 +161,7 @@
       "id": 12,
       "room": "Laundry",
       "task": "Iron",
-      "due_date": "2026-07-20",
+      "due_date": "2026-07-24",
       "done": true,
       "freq": "1w",
       "note": "",
