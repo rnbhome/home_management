@@ -25,7 +25,7 @@
       "room": "Kitchen",
       "task": "Clean oven",
       "due_date": "2026-08-19",
-      "done": true,
+      "done": false,
       "freq": "3m",
       "note": "",
       "last_completed": "2026-05-27"
