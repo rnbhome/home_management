@@ -24,7 +24,7 @@
       "id": 3,
       "room": "Kitchen",
       "task": "Clean oven",
-      "due_date": "2026-07-16",
+      "due_date": "2026-07-20",
       "done": true,
       "freq": "3m",
       "note": "",
