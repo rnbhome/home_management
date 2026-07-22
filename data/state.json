@@ -250,11 +250,11 @@
       "id": 21,
       "room": "Bedroom",
       "task": "Change bed linen",
-      "due_date": "2026-07-15",
+      "due_date": "2026-08-05",
       "done": true,
       "freq": "2w",
       "note": "",
-      "last_completed": "2026-07-01"
+      "last_completed": "2026-07-22"
     },
     {
       "id": 22,
