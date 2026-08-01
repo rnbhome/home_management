@@ -240,11 +240,11 @@
       "id": 20,
       "room": "Bedroom",
       "task": "Add water to bottles",
-      "due_date": "2026-07-01",
+      "due_date": "2026-08-01",
       "done": true,
       "freq": "any",
       "note": "",
-      "last_completed": "2026-07-01"
+      "last_completed": "2026-08-01"
     },
     {
       "id": 21,
