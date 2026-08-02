@@ -360,11 +360,11 @@
       "id": 39,
       "room": "Bathroom",
       "task": "Add shower water in sink bottle",
-      "due_date": "2026-07-27",
+      "due_date": "2026-08-09",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-07-20"
+      "last_completed": "2026-08-02"
     },
     {
       "id": 32,
