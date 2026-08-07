@@ -320,11 +320,11 @@
       "id": 28,
       "room": "Bathroom",
       "task": "Sweep and mop floor",
-      "due_date": "2026-08-05",
+      "due_date": "2026-09-06",
       "done": true,
       "freq": "1m",
       "note": "",
-      "last_completed": "2026-07-06"
+      "last_completed": "2026-08-07"
     },
     {
       "id": 29,
