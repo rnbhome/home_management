@@ -182,7 +182,7 @@
       "task": "Clean windows",
       "due_date": "2026-08-12",
       "done": true,
-      "freq": "1m",
+      "freq": "2m",
       "note": "",
       "last_completed": "2026-07-09"
     },
