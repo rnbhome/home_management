@@ -54,11 +54,11 @@
       "id": 6,
       "room": "Kitchen",
       "task": "Clean microwave & toaster",
-      "due_date": "2026-08-19",
+      "due_date": "2026-09-29",
       "done": true,
       "freq": "1m",
       "note": "",
-      "last_completed": "2026-07-20"
+      "last_completed": "2026-08-30"
     },
     {
       "id": 7,
