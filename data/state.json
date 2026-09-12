@@ -34,11 +34,11 @@
       "id": 4,
       "room": "Kitchen",
       "task": "Add food powder to jars",
-      "due_date": "2026-09-05",
+      "due_date": "2026-09-19",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-08-29"
+      "last_completed": "2026-09-12"
     },
     {
       "id": 5,
