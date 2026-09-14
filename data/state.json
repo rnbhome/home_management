@@ -251,11 +251,11 @@
       "id": 21,
       "room": "Bedroom",
       "task": "Change bed linen",
-      "due_date": "2026-09-07",
+      "due_date": "2026-09-28",
       "done": true,
       "freq": "2w",
       "note": "",
-      "last_completed": "2026-08-24"
+      "last_completed": "2026-09-14"
     },
     {
       "id": 22,
