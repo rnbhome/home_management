@@ -221,11 +221,11 @@
       "id": 35,
       "room": "Bedroom",
       "task": "Tidy bed",
-      "due_date": "2026-09-06",
+      "due_date": "2026-09-21",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-08-30"
+      "last_completed": "2026-09-14"
     },
     {
       "id": 18,
