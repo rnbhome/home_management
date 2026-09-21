@@ -363,7 +363,7 @@
       "task": "Add shower water in sink bottle",
       "due_date": "2026-09-20",
       "done": true,
-      "freq": "1w",
+      "freq": "1m",
       "note": "",
       "last_completed": "2026-09-13"
     },
