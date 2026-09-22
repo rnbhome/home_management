@@ -162,11 +162,11 @@
       "id": 12,
       "room": "Laundry",
       "task": "Iron",
-      "due_date": "2026-09-20",
+      "due_date": "2026-09-27",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-09-13"
+      "last_completed": "2026-09-20"
     },
     {
       "id": 13,
