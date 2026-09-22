@@ -142,11 +142,11 @@
       "id": 34,
       "room": "Laundry",
       "task": "Fill another load of laundry",
-      "due_date": "2026-09-15",
+      "due_date": "2026-09-29",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-09-12"
+      "last_completed": "2026-09-22"
     },
     {
       "id": 11,
