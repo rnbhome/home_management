@@ -172,10 +172,11 @@
       "id": 13,
       "room": "Laundry",
       "task": "Clean washing machine",
-      "due_date": "2026-09-06",
-      "done": false,
+      "due_date": "2026-12-26",
+      "done": true,
       "freq": "3m",
-      "note": ""
+      "note": "",
+      "last_completed": "2026-09-27"
     },
     {
       "id": 14,
