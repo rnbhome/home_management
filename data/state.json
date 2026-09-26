@@ -302,11 +302,11 @@
       "id": 26,
       "room": "Bathroom",
       "task": "Regenerate softener",
-      "due_date": "2026-09-21",
+      "due_date": "2026-10-11",
       "done": true,
       "freq": "2w",
       "note": "",
-      "last_completed": "2026-09-14"
+      "last_completed": "2026-09-27"
     },
     {
       "id": 27,
