@@ -34,21 +34,21 @@
       "id": 4,
       "room": "Kitchen",
       "task": "Add food powder to jars",
-      "due_date": "2026-09-19",
+      "due_date": "2026-10-03",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-09-12"
+      "last_completed": "2026-09-26"
     },
     {
       "id": 5,
       "room": "Kitchen",
       "task": "Clean sink counter",
-      "due_date": "2026-08-01",
-      "done": false,
+      "due_date": "2026-09-26",
+      "done": true,
       "freq": "any",
       "note": "",
-      "last_completed": "2026-08-01"
+      "last_completed": "2026-09-26"
     },
     {
       "id": 6,
