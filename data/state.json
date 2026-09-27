@@ -262,7 +262,7 @@
       "id": 22,
       "room": "Bedroom",
       "task": "Robo vacuum upstairs",
-      "due_date": "2026-09-26",
+      "due_date": "2026-09-30",
       "done": true,
       "freq": "2w",
       "note": "Make sure 1st floor is clear and all doors are open. Put vacuum back down before leaving.",
