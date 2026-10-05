@@ -154,7 +154,7 @@
       "task": "Wash and fluff towels",
       "due_date": "2026-10-23",
       "done": true,
-      "freq": "2m",
+      "freq": "6m",
       "note": "",
       "last_completed": "2026-08-24"
     },
