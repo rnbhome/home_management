@@ -332,11 +332,11 @@
       "id": 29,
       "room": "Bathroom",
       "task": "Wash bath mat",
-      "due_date": "2026-10-03",
+      "due_date": "2027-01-03",
       "done": true,
       "freq": "3m",
       "note": "",
-      "last_completed": "2026-07-05"
+      "last_completed": "2026-10-05"
     },
     {
       "id": 30,
