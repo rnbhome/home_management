@@ -333,7 +333,7 @@
       "room": "Bathroom",
       "task": "Wash bath mat",
       "due_date": "2026-10-23",
-      "done": true,
+      "done": false,
       "freq": "3m",
       "note": "",
       "last_completed": "2026-10-05"
