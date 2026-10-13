@@ -192,11 +192,11 @@
       "id": 15,
       "room": "Living Room",
       "task": "Clean robo vacuum",
-      "due_date": "2026-09-26",
+      "due_date": "2026-10-20",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-09-27"
+      "last_completed": "2026-10-13"
     },
     {
       "id": 16,
