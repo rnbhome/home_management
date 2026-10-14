@@ -163,11 +163,11 @@
       "id": 12,
       "room": "Laundry",
       "task": "Iron",
-      "due_date": "2026-10-03",
+      "due_date": "2026-10-28",
       "done": true,
       "freq": "2w",
       "note": "",
-      "last_completed": "2026-09-26"
+      "last_completed": "2026-10-14"
     },
     {
       "id": 13,
