@@ -183,11 +183,11 @@
       "id": 14,
       "room": "Living Room",
       "task": "Clean windows",
-      "due_date": "2026-09-09",
+      "due_date": "2027-01-12",
       "done": true,
       "freq": "3m",
       "note": "",
-      "last_completed": "2026-07-09"
+      "last_completed": "2026-10-14"
     },
     {
       "id": 15,
