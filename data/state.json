@@ -343,11 +343,11 @@
       "id": 30,
       "room": "Bathroom",
       "task": "Clean bathtub",
-      "due_date": "2026-09-15",
+      "due_date": "2026-11-13",
       "done": true,
       "freq": "1m",
       "note": "",
-      "last_completed": "2026-08-16"
+      "last_completed": "2026-10-14"
     },
     {
       "id": 37,
