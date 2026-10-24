@@ -45,7 +45,7 @@
       "room": "Kitchen",
       "task": "Clean sink counter",
       "due_date": "2026-10-24",
-      "done": true,
+      "done": false,
       "freq": "any",
       "note": "",
       "last_completed": "2026-10-24"
