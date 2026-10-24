@@ -4,11 +4,11 @@
       "id": 1,
       "room": "Kitchen",
       "task": "Throw rubbish",
-      "due_date": "2026-10-21",
+      "due_date": "2026-10-31",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-10-14"
+      "last_completed": "2026-10-24"
     },
     {
       "id": 2,
@@ -104,11 +104,11 @@
       "id": 40,
       "room": "Kitchen",
       "task": "Empty dishwasher",
-      "due_date": "2026-10-20",
+      "due_date": "2026-10-31",
       "done": true,
       "freq": "1w",
       "note": "",
-      "last_completed": "2026-10-13"
+      "last_completed": "2026-10-24"
     },
     {
       "id": 41,
