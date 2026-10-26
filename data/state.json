@@ -610,6 +610,341 @@
         "Blue bin",
         "Green bin"
       ]
+    },
+    {
+      "date": "2026-12-21",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-01-04",
+      "bins": [
+        "Blue bin"
+      ]
+    },
+    {
+      "date": "2027-01-08",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-01-15",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-01-22",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-01-29",
+      "bins": [
+        "Blue bin"
+      ]
+    },
+    {
+      "date": "2027-02-05",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-02-12",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-02-19",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-02-26",
+      "bins": [
+        "Blue bin"
+      ]
+    },
+    {
+      "date": "2027-03-05",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-03-12",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-03-19",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-03-26",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-04-02",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-04-09",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-04-16",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-04-23",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-04-30",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-05-07",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-05-14",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-05-21",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-05-28",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-06-04",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-06-11",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-06-18",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-06-25",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-07-02",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-07-09",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-07-16",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-07-23",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-07-30",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-08-06",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-08-13",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-08-20",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-08-27",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-09-03",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-09-10",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-09-17",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-09-24",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-10-01",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-10-08",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-10-15",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-10-22",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-10-29",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-11-05",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-11-12",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-11-19",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-11-26",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-12-03",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
+    },
+    {
+      "date": "2027-12-10",
+      "bins": [
+        "Black bin"
+      ]
+    },
+    {
+      "date": "2027-12-17",
+      "bins": [
+        "Blue bin",
+        "Green bin"
+      ]
     }
   ],
   "version": 2
