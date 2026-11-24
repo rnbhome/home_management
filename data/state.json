@@ -204,11 +204,11 @@
       "id": 16,
       "room": "Living Room",
       "task": "Dust (thorough)",
-      "due_date": "2026-10-27",
+      "due_date": "2026-12-22",
       "done": true,
       "freq": "1m",
       "note": "",
-      "last_completed": "2026-09-27"
+      "last_completed": "2026-11-22"
     },
     {
       "id": 17,
