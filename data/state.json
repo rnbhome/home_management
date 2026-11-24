@@ -153,11 +153,11 @@
       "id": 11,
       "room": "Laundry",
       "task": "Wash and fluff towels",
-      "due_date": "2026-10-23",
+      "due_date": "2027-05-22",
       "done": true,
       "freq": "6m",
       "note": "",
-      "last_completed": "2026-08-24"
+      "last_completed": "2026-11-23"
     },
     {
       "id": 12,
