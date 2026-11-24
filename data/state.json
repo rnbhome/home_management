@@ -284,11 +284,11 @@
       "id": 24,
       "room": "Bathroom",
       "task": "Clean sink",
-      "due_date": "2026-07-01",
+      "due_date": "2026-11-22",
       "done": true,
       "freq": "any",
       "note": "",
-      "last_completed": "2026-07-01"
+      "last_completed": "2026-11-22"
     },
     {
       "id": 19,
